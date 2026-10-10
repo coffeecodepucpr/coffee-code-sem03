@@ -75,7 +75,7 @@ Projetos de quem entregou a Semana 03. Quer entregar o seu? Veja [como entregar]
 |---|---|---|---|
 | Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Luis%20Medina/index.html) |
 | Mikhail Kalinin | Learnplat | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Mikhail%20Kalinin/pages/index.html) |
-| Pedro Henrique Gouveia |: | Login, cadastro, dashboard de matérias com busca e perfil | [pasta](entregas/Pedro%20Henrique%20Gouveia/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Pedro%20Henrique%20Gouveia/login.html) |
+| Pedro Henrique Gouveia | Sem nome definido | Login, cadastro, dashboard de matérias com busca e perfil | [pasta](entregas/Pedro%20Henrique%20Gouveia/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Pedro%20Henrique%20Gouveia/login.html) |
 | Rodrigo Fagnani | FixAqui | Conecta clientes a profissionais de pequenos serviços | [pasta](entregas/Rodrigo%20Fagnani/) · [Figma](https://www.figma.com/proto/8NBkV8NkIjlPJSXg4am1bf/Untitled?node-id=0-1&t=aBlZ6abbcyV5SmwH-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Rodrigo%20Fagnani/login.html) |
 
 ## O que não entra nesta semana
