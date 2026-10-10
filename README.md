@@ -7,7 +7,7 @@
 > coffee loaded ✓
 ```
 
-Material da **Semana 03** da trilha do Coffee & Code, o clube de tecnologia da PUCPR.
+Material da **Semana 03** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
 Na Semana 02 você construiu as três telas em HTML e CSS. Elas abrem no navegador, se ajustam ao celular — mas não fazem nada. O formulário de Login aceita qualquer coisa, o Dashboard mostra sempre os mesmos cards fixos, o botão de sair de um grupo não sai de lugar nenhum.
 
@@ -69,7 +69,14 @@ O checklist completo está em [docs/entregavel.md](docs/entregavel.md).
 
 ## Entregas da turma
 
-Ainda não há entregas da Semana 03. Quer ser a primeira pessoa? Veja [como entregar](entregas/README.md).
+Projetos de quem entregou a Semana 03. Quer entregar o seu? Veja [como entregar](entregas/README.md).
+
+| Pessoa | Projeto | Sobre | Links |
+|---|---|---|---|
+| Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Luis%20Medina/index.html) |
+| Mikhail Kalinin | Learnplat | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Mikhail%20Kalinin/pages/index.html) |
+| Pedro Henrique Gouveia | — | Login, cadastro, dashboard de matérias com busca e perfil | [pasta](entregas/Pedro%20Henrique%20Gouveia/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Pedro%20Henrique%20Gouveia/login.html) |
+| Rodrigo Fagnani | FixAqui | Conecta clientes a profissionais de pequenos serviços | [pasta](entregas/Rodrigo%20Fagnani/) · [Figma](https://www.figma.com/proto/8NBkV8NkIjlPJSXg4am1bf/Untitled?node-id=0-1&t=aBlZ6abbcyV5SmwH-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Rodrigo%20Fagnani/login.html) |
 
 ## O que não entra nesta semana
 
@@ -104,6 +111,8 @@ Todos os diagramas usados nos módulos estão em [`docs/assets/`](docs/assets/),
 
 - [SEM 01 — Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
 - [SEM 02 — Interface Web (Parte 1: Layout)](https://github.com/coffeecodepucpr/coffee-code-sem02)
+
+Trilha completa e próximas semanas: [perfil do Coffee & Code](https://github.com/coffeecodepucpr)
 
 ---
 
