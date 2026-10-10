@@ -4,7 +4,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ---
 
-## // Fundamentos de JavaScript (Módulos 02–04)
+## // Fundamentos de JavaScript (Módulos 02 a 04)
 
 **Se você está começando**
 - Escreva uma função `formatarParticipantes(n)` que devolve `"1 participante"` (singular) quando `n` for 1, e `"N participantes"` (plural) para qualquer outro valor.
@@ -15,7 +15,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ---
 
-## // Arrays e objetos (Módulos 05–06)
+## // Arrays e objetos (Módulos 05 a 06)
 
 **Se você está começando**
 - Use `.sort()` para ordenar `gruposMock` por quantidade de participantes, do menor para o maior, e confirme o resultado no console.
@@ -26,7 +26,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ---
 
-## // DOM e eventos (Módulos 07–09)
+## // DOM e eventos (Módulos 07 a 09)
 
 **Se você está começando**
 - Adicione um contador visível na tela ("X grupos encontrados"), atualizado toda vez que a busca do Dashboard filtra a lista.
@@ -57,7 +57,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ---
 
-## // Renderização, estado e componentização (Módulos 12–13)
+## // Renderização, estado e componentização (Módulos 12 a 13)
 
 **Se você está começando**
 - Adicione um estado vazio visível ("Nenhum grupo encontrado") quando uma busca não retornar nenhum resultado.

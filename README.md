@@ -1,21 +1,21 @@
-# ☕ Coffee & Code — SEM 03 | Interface Web (Parte 2: Dinâmica)
+# Coffee & Code | SEM 03 | Interface Web (Parte 2: Dinâmica)
 
 ```text
 > module: sem-03
-> tema: interface web — dinâmica
+> tema: interface web (dinâmica)
 > status: online
-> coffee loaded ✓
+> coffee loaded
 ```
 
 Material da **Semana 03** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
-Na Semana 02 você construiu as três telas em HTML e CSS. Elas abrem no navegador, se ajustam ao celular — mas não fazem nada. O formulário de Login aceita qualquer coisa, o Dashboard mostra sempre os mesmos cards fixos, o botão de sair de um grupo não sai de lugar nenhum.
+Na Semana 02 você construiu as três telas em HTML e CSS. Elas abrem no navegador, se ajustam ao celular, mas não fazem nada. O formulário de Login aceita qualquer coisa, o Dashboard mostra sempre os mesmos cards fixos, o botão de sair de um grupo não sai de lugar nenhum.
 
-A Semana 03 existe para dar comportamento a essas telas: JavaScript ES6+, DOM, eventos, validação de formulários e dados em JSON. No fim da semana a interface reage, valida e renderiza — ainda sem backend, mas com lógica de verdade.
+A Semana 03 existe para dar comportamento a essas telas: JavaScript ES6+, DOM, eventos, validação de formulários e dados em JSON. No fim da semana a interface reage, valida e renderiza, ainda sem backend, mas com lógica de verdade.
 
 ## Por onde começar
 
-👉 **[docs/00-comece-aqui.md](docs/00-comece-aqui.md)** — leia este primeiro. Ele explica o caminho da semana e o que vem da Semana 02.
+**[docs/00-comece-aqui.md](docs/00-comece-aqui.md)**: leia este primeiro. Ele explica o caminho da semana e o que vem da Semana 02.
 
 Depois, siga os módulos na ordem:
 
@@ -38,15 +38,15 @@ Depois, siga os módulos na ordem:
 
 E, para consultar quando precisar:
 
-- 💻 [Exemplo executável](docs/example/) — as três telas com JavaScript real, para consulta
-- 🎯 [Desafios](docs/desafios.md) — opcionais, para ir além do pedido
-- ✅ [Entregável](docs/entregavel.md) — checklist final antes de fechar a semana
+- [Exemplo executável](docs/example/): as três telas com JavaScript real, para consulta
+- [Desafios](docs/desafios.md): opcionais, para ir além do pedido
+- [Entregável](docs/entregavel.md): checklist final antes de fechar a semana
 
 ## O exemplo executável
 
 A pasta [`docs/example/`](docs/example/) tem uma implementação de referência das três telas (Login, Dashboard, Perfil), evoluindo o exemplo da Semana 02 com JavaScript real. Baixe o repositório e abra o `index.html` no navegador para navegar entre elas.
 
-É material de **consulta, não gabarito**. O seu projeto tem as suas próprias telas — o exemplo serve para você ver uma solução possível quando travar, não para copiar.
+É material de **consulta, não gabarito**. O seu projeto tem as suas próprias telas: o exemplo serve para você ver uma solução possível quando travar, não para copiar.
 
 ## O entregável
 
@@ -75,25 +75,25 @@ Projetos de quem entregou a Semana 03. Quer entregar o seu? Veja [como entregar]
 |---|---|---|---|
 | Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Luis%20Medina/index.html) |
 | Mikhail Kalinin | Learnplat | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Mikhail%20Kalinin/pages/index.html) |
-| Pedro Henrique Gouveia | — | Login, cadastro, dashboard de matérias com busca e perfil | [pasta](entregas/Pedro%20Henrique%20Gouveia/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Pedro%20Henrique%20Gouveia/login.html) |
+| Pedro Henrique Gouveia |: | Login, cadastro, dashboard de matérias com busca e perfil | [pasta](entregas/Pedro%20Henrique%20Gouveia/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Pedro%20Henrique%20Gouveia/login.html) |
 | Rodrigo Fagnani | FixAqui | Conecta clientes a profissionais de pequenos serviços | [pasta](entregas/Rodrigo%20Fagnani/) · [Figma](https://www.figma.com/proto/8NBkV8NkIjlPJSXg4am1bf/Untitled?node-id=0-1&t=aBlZ6abbcyV5SmwH-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem03/entregas/Rodrigo%20Fagnani/login.html) |
 
 ## O que não entra nesta semana
 
-Nada de backend, banco de dados ou chamada de rede real. Nada de framework (React ou equivalente) — tudo em JavaScript puro, de propósito. E os dados mock resetam a cada recarregamento de página: isso é esperado.
+Nada de backend, banco de dados ou chamada de rede real. Nada de framework (React ou equivalente); tudo em JavaScript puro, de propósito. E os dados mock resetam a cada recarregamento de página: isso é esperado.
 
 ## Projeto contínuo
 
-Todos os módulos usam o mesmo projeto fictício das semanas anteriores: o **Buscador de Grupos de Estudo**. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma — só troque o nome.
+Todos os módulos usam o mesmo projeto fictício das semanas anteriores: o **Buscador de Grupos de Estudo**. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma, só troque o nome.
 
 ## Como funciona
 
 O Coffee & Code é **100% online**. Cada módulo foi escrito para ser autossuficiente: você estuda no seu ritmo, pode avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
 
-Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
+Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu, **não para dar aula**:
 
-- 🗓️ **quarta-feira** — 20h00 às 21h30
-- 🗓️ **sábado** — 10h00 às 11h30
+- **quarta-feira**: 20h00 às 21h30
+- **sábado**: 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.
 
@@ -109,14 +109,14 @@ Todos os diagramas usados nos módulos estão em [`docs/assets/`](docs/assets/),
 
 ## Semanas anteriores
 
-- [SEM 01 — Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
-- [SEM 02 — Interface Web (Parte 1: Layout)](https://github.com/coffeecodepucpr/coffee-code-sem02)
+- [SEM 01: Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
+- [SEM 02: Interface Web (Parte 1: Layout)](https://github.com/coffeecodepucpr/coffee-code-sem02)
 
 Trilha completa e próximas semanas: [perfil do Coffee & Code](https://github.com/coffeecodepucpr)
 
 ---
 
 ```text
-HTTP 418 — I'm a teapot
+HTTP 418: I'm a teapot
 > ready to code
 ```
