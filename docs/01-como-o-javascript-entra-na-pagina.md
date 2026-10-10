@@ -1,5 +1,7 @@
 # Módulo 01, Como o JavaScript Entra na Página
 
+Português · [English](../docs-eng/01-how-javascript-gets-into-the-page.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -93,7 +95,7 @@ Se `script.js` tentar selecionar o `<h1>`, ele falha: o `<body>` ainda não exis
 ## // Pratique sozinho
 
 > **DESAFIO**
-> Remova temporariamente o `defer` do `<script>` do Dashboard, e adicione, logo no topo de `script.js`, uma linha tentando ler algo do `<body>` (você vai aprender a sintaxe exata no Módulo 07, por enquanto, se quiser só observar o erro, use `document.body.innerHTML` dentro de um `console.log`). Veja o que aparece no console. Depois, devolva o `defer` e confirme que o erro desaparece.
+> Remova temporariamente o `defer` do `<script>` do Dashboard, e adicione, logo no topo de `script.js`, uma linha tentando ler algo do `<body>` (você vai aprender a sintaxe exata no Módulo 07; por enquanto, se quiser só observar o erro, use `document.body.innerHTML` dentro de um `console.log`). Veja o que aparece no console. Depois, devolva o `defer` e confirme que o erro desaparece.
 
 ## // Aplicando no projeto da semana
 
@@ -118,6 +120,6 @@ Resposta: sim, funciona: colocar o `<script>` no fim do `<body>` garante que tod
 
 ---
 
-**Próximo módulo:** `02-variaveis-tipos-e-operadores.md`, antes de qualquer lógica, o vocabulário mínimo: onde os valores ficam guardados.
+**Próximo módulo:** `02-variaveis-tipos-e-operadores.md`: antes de qualquer lógica, o vocabulário mínimo: onde os valores ficam guardados.
 
 `Material de Estudo // Coffee & Code`

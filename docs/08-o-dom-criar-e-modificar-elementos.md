@@ -1,5 +1,7 @@
 # Módulo 08, O DOM: Criar e Modificar Elementos
 
+Português · [English](../docs-eng/08-the-dom-creating-and-changing-elements.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -56,7 +58,7 @@ item.remove();
 
 ```javascript
 const card = document.querySelector(".card");
-card.innerHTML = "<strong>Cálculo I</strong>, 5 participantes";
+card.innerHTML = "<strong>Cálculo I</strong> | 5 participantes";
 ```
 
 `innerHTML` interpreta o texto atribuído como HTML de verdade: permite criar vários elementos de uma vez, em uma linha, em vez de várias chamadas de `createElement`. É a técnica usada no Módulo 12 para renderizar listas inteiras.
@@ -68,7 +70,7 @@ card.innerHTML = "<strong>Cálculo I</strong>, 5 participantes";
 
 | Opção | Vantagem | Cuidado |
 |---|---|---|
-| `.textContent` | Simples, sempre seguro para texto puro | Não interpreta tags HTML, se você atribuir `"<b>texto</b>"`, aparece literalmente com as tags visíveis |
+| `.textContent` | Simples, sempre seguro para texto puro | Não interpreta tags HTML: se você atribuir `"<b>texto</b>"`, aparece literalmente com as tags visíveis |
 | `createElement` + `appendChild` | Controle total da estrutura, elemento por elemento | Mais linhas de código para estruturas grandes |
 | `innerHTML` | Cria várias camadas de HTML rapidamente, em uma linha | Nunca usar com texto não confiável, sem tratamento |
 
@@ -78,7 +80,7 @@ card.innerHTML = "<strong>Cálculo I</strong>, 5 participantes";
 
 ```javascript
 const nomeDigitado = document.querySelector("#nome").value;
-resultado.innerHTML = nomeDigitado; // risco, se nomeDigitado vier de qualquer pessoa
+resultado.innerHTML = nomeDigitado; // risco, se nomeDigitado puder vir de qualquer pessoa
 ```
 
 **Bom exemplo**: mesmo caso, com `.textContent`, seguro:
@@ -132,6 +134,6 @@ Resposta: não. `.textContent` trata qualquer coisa atribuída a ele como texto 
 
 ---
 
-**Próximo módulo:** `09-eventos.md`, até agora, tudo roda assim que a página carrega. Hora de reagir a cliques, digitação e envios de formulário.
+**Próximo módulo:** `09-eventos.md`: até agora, tudo roda assim que a página carrega. Hora de reagir a cliques, digitação e envios de formulário.
 
 `Material de Estudo // Coffee & Code`

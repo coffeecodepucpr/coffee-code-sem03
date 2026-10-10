@@ -1,5 +1,7 @@
 # Módulo 12, Renderizando Listas Dinamicamente
 
+Português · [English](../docs-eng/12-rendering-lists-dynamically.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -24,7 +26,7 @@ Olhe o HTML do seu Dashboard, herdado da Semana 02:
 </section>
 ```
 
-Cada card foi escrito à mão. Se um grupo novo for criado, alguém precisa editar o HTML. Se um grupo for removido, alguém precisa lembrar de apagar o trecho certo. Isso não escala, e, mais importante, não é assim que uma interface real funciona: a lista de grupos vem de algum lugar (por enquanto, um array que você mesmo escreve; nas próximas semanas do clube, uma API de verdade), e a tela precisa se organizar sozinha em cima dela.
+Cada card foi escrito à mão. Se um grupo novo for criado, alguém precisa editar o HTML. Se um grupo for removido, alguém precisa lembrar de apagar o trecho certo. Isso não escala. E, mais importante, não é assim que uma interface real funciona: a lista de grupos vem de algum lugar (por enquanto, um array que você mesmo escreve; nas próximas semanas do clube, uma API de verdade), e a tela precisa se organizar sozinha em cima dela.
 
 ## // A ideia central
 
@@ -43,7 +45,7 @@ O caminho, em três passos:
 <img src="./assets/mock-data-to-render.svg" alt="Array de objetos, com .map(), virando elementos renderizados na tela" width="520">
 </div>
 
-Cada objeto do array, `{ materia: "Cálculo I", participantes: 5 }`, vira, na tela, um card com essas informações. A ordem se mantém: o primeiro item do array é o primeiro card; se o array tiver seis itens, a tela tem seis cards.
+Cada objeto do array (como `{ materia: "Cálculo I", participantes: 5 }`) vira, na tela, um card com essas informações. A ordem se mantém: o primeiro item do array é o primeiro card; se o array tiver seis itens, a tela tem seis cards.
 
 ## // O método `.map()` aplicado a renderização
 
@@ -71,7 +73,7 @@ const htmlDosCards = grupos.map(function (grupo) {
 
 ## // Template literals: escrevendo HTML dentro do JavaScript
 
-Repare que o HTML do exemplo acima está entre crases, não aspas comuns. Isso se chama *template literal*, uma forma de string que permite quebrar linha livremente e, principalmente, **inserir valores de variáveis diretamente**, usando `${...}`:
+Repare que o HTML do exemplo acima está entre crases, não aspas comuns. Isso se chama *template literal*: uma forma de string que permite quebrar linha livremente e, principalmente, **inserir valores de variáveis diretamente**, usando `${...}`:
 
 ```javascript
 const materia = "Cálculo I";
@@ -79,7 +81,7 @@ const texto = `A matéria é ${materia}.`;
 // texto agora é: "A matéria é Cálculo I."
 ```
 
-Sem template literals, o mesmo resultado exigiria concatenar strings com `+`, muito mais difícil de ler quando o HTML tem várias linhas e vários valores, como no exemplo dos cards.
+Sem template literals, o mesmo resultado exigiria concatenar strings com `+`, o que é muito mais difícil de ler quando o HTML tem várias linhas e vários valores, como no exemplo dos cards.
 
 ## // Juntando tudo e inserindo na página
 
@@ -109,7 +111,7 @@ Três pontos que merecem atenção:
 |---|---|
 | `.join("")` | `.map()` devolve um array de strings; `.join("")` junta todas em uma string só, sem nenhum separador entre elas |
 | `container.innerHTML = html` | Substitui todo o conteúdo do container pelo HTML gerado, inclusive apagando o que existia antes |
-| `function renderizarGrupos(lista)` | Uma função, não um script solto, assim você pode chamar de novo sempre que os dados mudarem (depois de uma busca, por exemplo) |
+| `function renderizarGrupos(lista)` | Uma função, não um script solto: assim você pode chamar de novo sempre que os dados mudarem (depois de uma busca, por exemplo) |
 
 > **SOBRE `INNERHTML` E SEGURANÇA**
 > Você já viu no Módulo 08 (Semana 03) que `innerHTML` não deve receber texto digitado por uma pessoa sem tratamento: o risco é injeção de código. Neste caso específico, os dados vêm de um array que *você* escreveu (ou, mais adiante, de uma API controlada), não de um campo de formulário aberto ao público; por isso é uma aplicação aceitável de `innerHTML` aqui. Se, no futuro, algum desses valores puder vir digitado por um usuário sem qualquer tratamento, a mesma cautela do Módulo 08 volta a valer.
@@ -198,6 +200,6 @@ Resposta: nada muda na tela. `.filter()` só cria um novo array filtrado: ele n�
 
 ---
 
-**Próximo módulo:** `13-estado-e-componentizacao.md`, a lista renderiza. Agora, como organizar isso quando a interface cresce e vários pedaços da tela dependem dos mesmos dados?
+**Próximo módulo:** `13-estado-e-componentizacao.md`: a lista renderiza. Agora, como organizar isso quando a interface cresce e vários pedaços da tela dependem dos mesmos dados?
 
 `Material de Estudo // Coffee & Code`

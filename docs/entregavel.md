@@ -1,5 +1,7 @@
 # Entregável, Semana 03
 
+Português · [English](../docs-eng/deliverable.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 Use este arquivo como checklist final antes de considerar a Semana 03 concluída. Ele reúne o que é **obrigatório**; os desafios extras em `desafios.md` são opcionais.

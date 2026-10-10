@@ -1,5 +1,7 @@
 # Módulo 03, Decisões e Repetições
 
+Português · [English](../docs-eng/03-decisions-and-loops.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -22,11 +24,11 @@ if (participantes >= 10) {
 }
 ```
 
-O JavaScript testa as condições **de cima para baixo** e entra no primeiro bloco verdadeiro, ignorando os demais, por isso a ordem das condições importa. Se `participantes >= 5` viesse antes de `participantes >= 10`, um grupo com 12 participantes cairia no bloco errado ("Quase cheio"), porque 12 também é `>= 5`.
+O JavaScript testa as condições **de cima para baixo** e entra no primeiro bloco verdadeiro, ignorando os demais. Por isso a ordem das condições importa. Se `participantes >= 5` viesse antes de `participantes >= 10`, um grupo com 12 participantes cairia no bloco errado ("Quase cheio"), porque 12 também é `>= 5`.
 
 ## // Valores truthy e falsy
 
-Dentro de uma condição, o JavaScript converte qualquer valor para `true` ou `false` automaticamente. A lista do que é tratado como falso é curta, vale decorar:
+Dentro de uma condição, o JavaScript converte qualquer valor para `true` ou `false` automaticamente. A lista do que é tratado como falso é curta; vale decorar:
 
 > **FALSY: OS ÚNICOS VALORES TRATADOS COMO FALSOS**
 > `false`, `0`, `""` (string vazia), `null`, `undefined` e `NaN`. Praticamente qualquer outro valor, incluindo `"0"` (string) e arrays vazios `[]`, é tratado como verdadeiro.
@@ -75,7 +77,7 @@ while (tentativas < 3) {
 Use `while` quando você não sabe de antemão *quantas* vezes vai repetir: só sabe a condição que deve continuar sendo verdadeira. `for` é mais comum quando o número de repetições já é conhecido (como percorrer um array).
 
 > **CUIDADO COM LAÇO INFINITO**
-> Se a condição de um `while` nunca virar falsa, por exemplo, esquecer o `tentativas++`, o código trava a aba do navegador, repetindo para sempre. Sempre confirme que existe algo, dentro do laço, que eventualmente torna a condição falsa.
+> Se a condição de um `while` nunca virar falsa (por exemplo, se você esquecer o `tentativas++`), o código trava a aba do navegador, repetindo para sempre. Sempre confirme que existe algo, dentro do laço, que eventualmente torna a condição falsa.
 
 ## // Bom exemplo × mau exemplo
 
@@ -125,7 +127,7 @@ if (participantes >= 10) {
 ## // Aplicando no projeto da semana
 
 1. No `script.js`, escreva um `for...of` que percorre uma lista de matérias do seu projeto e imprime cada uma no console. Isso não aparece na tela ainda (isso vem no Módulo 12), mas confirma que a lógica de repetição está correta antes de conectar ao DOM.
-2. Escreva uma condição `if/else` real do seu projeto, por exemplo, decidir uma mensagem diferente dependendo da quantidade de participantes de um grupo.
+2. Escreva uma condição `if/else` real do seu projeto: por exemplo, decidir uma mensagem diferente dependendo da quantidade de participantes de um grupo.
 3. Commit: `git commit -m "Adiciona lógica de decisão e repetição inicial"`.
 
 ## // Checkpoint
@@ -145,6 +147,6 @@ Resposta: um `for...of` para percorrer o array, combinado com um `if/else` dentr
 
 ---
 
-**Próximo módulo:** `04-funcoes-e-arrow-functions.md`, decisão e repetição já funcionam soltas. Hora de organizar isso em blocos reutilizáveis.
+**Próximo módulo:** `04-funcoes-e-arrow-functions.md`: decisão e repetição já funcionam soltas. Hora de organizar isso em blocos reutilizáveis.
 
 `Material de Estudo // Coffee & Code`

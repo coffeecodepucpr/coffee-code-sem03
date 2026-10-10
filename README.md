@@ -1,5 +1,7 @@
 # Coffee & Code | SEM 03 | Interface Web (Parte 2: Dinâmica)
 
+Português · [English](README.en.md)
+
 ```text
 > module: sem-03
 > tema: interface web (dinâmica)
@@ -9,9 +11,11 @@
 
 Material da **Semana 03** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
-Na Semana 02 você construiu as três telas em HTML e CSS. Elas abrem no navegador, se ajustam ao celular, mas não fazem nada. O formulário de Login aceita qualquer coisa, o Dashboard mostra sempre os mesmos cards fixos, o botão de sair de um grupo não sai de lugar nenhum.
+Na Semana 02 você construiu as três telas em HTML e CSS. Elas abrem no navegador, se ajustam ao celular. Mas não fazem nada. O formulário de Login aceita qualquer coisa, o Dashboard mostra sempre os mesmos cards fixos, o botão de sair de um grupo não sai de lugar nenhum.
 
 A Semana 03 existe para dar comportamento a essas telas: JavaScript ES6+, DOM, eventos, validação de formulários e dados em JSON. No fim da semana a interface reage, valida e renderiza, ainda sem backend, mas com lógica de verdade.
+
+> **Sobre o idioma:** o material em inglês fica em [`docs-eng/`](docs-eng/), com a mesma estrutura de [`docs/`](docs/); os READMEs têm versão em inglês com o sufixo `.en.md`.
 
 ## Por onde começar
 
@@ -84,7 +88,7 @@ Nada de backend, banco de dados ou chamada de rede real. Nada de framework (Reac
 
 ## Projeto contínuo
 
-Todos os módulos usam o mesmo projeto fictício das semanas anteriores: o **Buscador de Grupos de Estudo**. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma, só troque o nome.
+Todos os módulos usam o mesmo projeto fictício das semanas anteriores: o **Buscador de Grupos de Estudo**. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma: só troque o nome.
 
 ## Como funciona
 

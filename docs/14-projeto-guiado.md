@@ -1,5 +1,7 @@
 # Módulo 14, Projeto Guiado: Login, Dashboard e Perfil Dinâmicos
 
+Português · [English](../docs-eng/14-guided-project.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -31,7 +33,7 @@ const usuarioMock = {
 
 ## // Etapa 3, Login: validação completa (Módulos 09, 10)
 
-Conecte o formulário, previna o reload, valide e-mail e senha, mostre erros específicos, limpando mensagens antigas a cada nova tentativa, seguindo exatamente o exemplo do Módulo 10.
+Conecte o formulário, previna o reload, valide e-mail e senha, mostre erros específicos (limpando mensagens antigas a cada nova tentativa), seguindo exatamente o exemplo do Módulo 10.
 
 ```javascript
 const formLogin = document.querySelector("#form-login");
@@ -40,7 +42,7 @@ if (formLogin) {
   formLogin.addEventListener("submit", function (event) {
     event.preventDefault();
     // validação completa, como no Módulo 10
-    console.log("Login validado, aqui entraria o redirecionamento");
+    console.log("Login validado: aqui entraria o redirecionamento");
   });
 }
 ```
@@ -144,7 +146,7 @@ if (containerGrid) {
 |---|---|---|
 | Erro no console em páginas onde um elemento não existe | O mesmo `script.js` roda nas três páginas, mas nem todo elemento existe em todas | Sempre teste `if (elemento)` antes de usar, especialmente formulários e containers específicos de uma tela |
 | Clique em botão renderizado dinamicamente não faz nada | `addEventListener` foi colocado direto no botão, antes dele existir | Coloque o listener no container (que já existia), e confira `event.target` dentro do callback |
-| Dados e tela dessincronizados depois de uma ação | Alterar o DOM direto em vez de passar pelo estado | Revise o Módulo 13; toda ação deveria terminar em atualizar o estado e chamar a renderização de novo |
+| Dados e tela dessincronizados depois de uma ação | Alterar o DOM direto em vez de passar pelo estado | Revise o Módulo 13: toda ação deveria terminar em atualizar o estado e chamar a renderização de novo |
 
 ## // Aplicando no projeto da semana
 
@@ -167,6 +169,6 @@ Resposta possível: sem o script conectado (Módulo 01), nenhuma lógica roda. S
 
 ---
 
-**Próximo módulo:** `15`, antes de considerar a semana concluída, uma revisão final contra os critérios reais do entregável (veja `entregavel.md`).
+**Próximo módulo:** `15`: antes de considerar a semana concluída, uma revisão final contra os critérios reais do entregável (veja `entregavel.md`).
 
 `Material de Estudo // Coffee & Code`

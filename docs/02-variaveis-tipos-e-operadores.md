@@ -1,5 +1,7 @@
 # Módulo 02, Variáveis, Tipos e Operadores
 
+Português · [English](../docs-eng/02-variables-types-and-operators.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -63,7 +65,7 @@ const total = 5 + 3;   // 8
 const resto = 10 % 3;  // 1, resto da divisão
 ```
 
-`%` (módulo) é menos comum no dia a dia, mas aparece bastante em lógica de alternância, por exemplo, para dar um fundo diferente a linhas pares e ímpares de uma tabela.
+`%` (módulo) é menos comum no dia a dia, mas aparece bastante em lógica de alternância: por exemplo, para dar um fundo diferente a linhas pares e ímpares de uma tabela.
 
 ## // Operadores de comparação: `===` importa
 
@@ -74,7 +76,7 @@ console.log(5 == "5");    // true, evite!
 ```
 
 > **POR QUE `===` E NÃO `==`**
-> `==` compara o valor *convertendo* os tipos primeiro: `5 == "5"` dá `true`, mesmo sendo um número e uma string. `===` compara valor *e* tipo, sem converter nada, mais previsível, e é o padrão recomendado em qualquer código novo. Trate `==` como uma armadilha a evitar, não como uma opção equivalente mais curta.
+> `==` compara o valor *convertendo* os tipos primeiro: `5 == "5"` dá `true`, mesmo sendo um número e uma string. `===` compara valor *e* tipo, sem converter nada. É mais previsível, e é o padrão recomendado em qualquer código novo. Trate `==` como uma armadilha a evitar, não como uma opção equivalente mais curta.
 
 | Operador | Significado |
 |---|---|
@@ -148,7 +150,7 @@ if (participantesNumero === 5) {
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Um campo de formulário sempre entrega o valor digitado como `string`, mesmo que a pessoa digite só números. Por que isso importa para o restante da lógica que você vai escrever esta semana?
 
-Resposta: porque qualquer comparação ou cálculo que espera um `number` vai se comportar de forma inesperada se receber uma `string` sem conversão, por exemplo, `"5" + "3"` resulta em `"53"` (concatenação de texto), não `8`. Sempre que um valor vier de um campo de formulário e precisar ser tratado como número, é necessário convertê-lo explicitamente com `Number(...)` antes.
+Resposta: porque qualquer comparação ou cálculo que espera um `number` vai se comportar de forma inesperada se receber uma `string` sem conversão. Por exemplo, `"5" + "3"` resulta em `"53"` (concatenação de texto), não `8`. Sempre que um valor vier de um campo de formulário e precisar ser tratado como número, é necessário convertê-lo explicitamente com `Number(...)` antes.
 
 ## // Resumo do módulo
 
@@ -160,6 +162,6 @@ Resposta: porque qualquer comparação ou cálculo que espera um `number` vai se
 
 ---
 
-**Próximo módulo:** `03-decisoes-e-repeticoes.md`, com variáveis e comparações prontas, hora de controlar o que o código faz, e quantas vezes.
+**Próximo módulo:** `03-decisoes-e-repeticoes.md`: com variáveis e comparações prontas, hora de controlar o que o código faz, e quantas vezes.
 
 `Material de Estudo // Coffee & Code`

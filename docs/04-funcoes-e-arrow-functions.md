@@ -1,5 +1,7 @@
 # Módulo 04, Funções e Arrow Functions
 
+Português · [English](../docs-eng/04-functions-and-arrow-functions.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -31,8 +33,8 @@ console.log(statusDoGrupo(12)); // Cheio
 | Parte | Significado |
 |---|---|
 | `statusDoGrupo` | Nome da função |
-| `participantes` | Parâmetro, o nome que a função usa para receber um valor |
-| `8`, `12` | Argumentos, os valores reais passados em cada chamada |
+| `participantes` | Parâmetro: o nome que a função usa para receber um valor |
+| `8`, `12` | Argumentos: os valores reais passados em cada chamada |
 | `return` | O valor que a função devolve para quem a chamou |
 
 ## // `return` interrompe a função
@@ -105,7 +107,7 @@ console.log(statusDoGrupo(participantesGrupo2));
 console.log(statusDoGrupo(participantesGrupo3));
 ```
 
-(Repare no operador ternário `condição ? valorSeVerdadeiro : valorSeFalso`, uma forma curta de escrever um `if/else` de uma linha só, útil quando os dois resultados são simples.)
+(Repare no operador ternário `condição ? valorSeVerdadeiro : valorSeFalso`: uma forma curta de escrever um `if/else` de uma linha só, útil quando os dois resultados são simples.)
 
 ## // Erros comuns
 
@@ -150,6 +152,6 @@ Resposta: `resultado` vai receber `undefined`. `console.log` só imprime um valo
 
 ---
 
-**Próximo módulo:** `05-arrays-e-metodos-essenciais.md`, funções prontas; agora, a ferramenta que você mais vai usar nesta semana: transformar listas de dados.
+**Próximo módulo:** `05-arrays-e-metodos-essenciais.md`: funções prontas. Agora, a ferramenta que você mais vai usar nesta semana: transformar listas de dados.
 
 `Material de Estudo // Coffee & Code`

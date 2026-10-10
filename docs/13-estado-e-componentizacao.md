@@ -1,5 +1,7 @@
 # Módulo 13, Estado e Componentização
 
+Português · [English](../docs-eng/13-state-and-componentization.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -10,7 +12,7 @@ Este módulo assume que o Módulo 12 já está sólido: renderizar uma lista a p
 
 ## // O problema
 
-Imagine que o Dashboard mostra "6 grupos encontrados" em um texto, **além** do grid de cards. Se uma pessoa sai de um grupo (removendo um item do array) e você lembra de atualizar o grid, mas esquece de atualizar aquele texto: agora a tela mostra informações contraditórias. Quanto mais lugares da tela dependem dos mesmos dados, maior o risco de esquecer de atualizar algum.
+Imagine que o Dashboard mostra "6 grupos encontrados" em um texto, **além** do grid de cards. Se uma pessoa sai de um grupo (removendo um item do array) e você lembra de atualizar o grid, mas esquece de atualizar aquele texto, agora a tela mostra informações contraditórias. Quanto mais lugares da tela dependem dos mesmos dados, maior o risco de esquecer de atualizar algum.
 
 ## // O que é "estado"
 
@@ -46,7 +48,7 @@ function removerGrupo(id) {
 Repare que `removerGrupo` não toca no DOM em nenhum momento: ele só atualiza o array (`gruposMock`) e chama `renderizarGrupos` de novo, que já sabe reconstruir a tela inteira a partir do estado atual (Módulo 12). A função de renderização nunca precisa saber *por que* os dados mudaram, só *que* mudaram.
 
 > **POR QUE `GRUPOSMOCK` VIROU `LET`**
-> Desde o Módulo 02: `const` impede reatribuir a variável inteira. Como `removerGrupo` reatribui `gruposMock` (`gruposMock = gruposMock.filter(...)`), a variável precisa ser `let`. Se você só alterasse itens de dentro do array (sem reatribuir o array inteiro), `const` continuaria funcionando, mas filtrar sempre cria um array novo, então a variável que o guarda precisa aceitar reatribuição.
+> Desde o Módulo 02: `const` impede reatribuir a variável inteira. Como `removerGrupo` reatribui `gruposMock` (`gruposMock = gruposMock.filter(...)`), a variável precisa ser `let`. Se você só alterasse itens de dentro do array (sem reatribuir o array inteiro), `const` continuaria funcionando. Mas filtrar sempre cria um array novo, então a variável que o guarda precisa aceitar reatribuição.
 
 ## // Componentização: uma função por "pedaço" de interface
 
@@ -81,7 +83,7 @@ Se o Perfil também precisar mostrar cards de grupos (os grupos dos quais a pess
 
 ## // Sem framework, de propósito
 
-Frameworks como React (que você vai conhecer em semanas futuras do clube, se o percurso continuar) formalizam exatamente esses dois conceitos, estado e componentização, com ferramentas próprias e mais poderosas. Entender o padrão em JavaScript puro primeiro é o que torna um framework, mais adiante, parecer uma extensão natural do que você já sabe, em vez de uma sintaxe nova e arbitrária para decorar.
+Frameworks como React (que você vai conhecer em semanas futuras do clube, se o percurso continuar) formalizam exatamente esses dois conceitos (estado e componentização) com ferramentas próprias e mais poderosas. Entender o padrão em JavaScript puro primeiro é o que torna um framework, mais adiante, parecer uma extensão natural do que você já sabe, em vez de uma sintaxe nova e arbitrária para decorar.
 
 ## // Bom exemplo × mau exemplo
 
@@ -136,7 +138,7 @@ botaoSair.addEventListener("click", function () {
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Um colega sugere resolver a remoção de um grupo chamando direto `elemento.remove()` no card clicado, "porque é mais rápido". Que problema real isso cria, mesmo que pareça funcionar visualmente na hora?
 
-Resposta: o card desaparece da tela, mas o item correspondente continua no array de estado (`gruposMock`). Qualquer parte do código que depender desse estado depois (um contador de grupos, uma nova renderização por busca, salvar os dados mais adiante) vai continuar contando o grupo "removido", porque ele nunca foi de fato removido da fonte da verdade. A tela e os dados ficam dessincronizados, um problema que só cresce conforme mais partes da interface passam a depender dos mesmos dados.
+Resposta: o card desaparece da tela, mas o item correspondente continua no array de estado (`gruposMock`). Qualquer parte do código que depender desse estado depois (um contador de grupos, uma nova renderização por busca, salvar os dados mais adiante) vai continuar contando o grupo "removido", porque ele nunca foi de fato removido da fonte da verdade. A tela e os dados ficam dessincronizados: um problema que só cresce conforme mais partes da interface passam a depender dos mesmos dados.
 
 ## // Resumo do módulo
 
@@ -148,6 +150,6 @@ Resposta: o card desaparece da tela, mas o item correspondente continua no array
 
 ---
 
-**Próximo módulo:** `14-projeto-guiado.md`, juntando tudo, do início ao fim, nas três telas completas.
+**Próximo módulo:** `14-projeto-guiado.md`: juntando tudo, do início ao fim, nas três telas completas.
 
 `Material de Estudo // Coffee & Code`

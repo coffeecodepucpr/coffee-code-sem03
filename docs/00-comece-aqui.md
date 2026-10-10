@@ -1,12 +1,14 @@
 # Módulo 00, Comece Aqui
 
+Português · [English](../docs-eng/00-start-here.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
 
 ## // Bem-vindo à Semana 03
 
-Se você seguiu a Semana 02, tem hoje três páginas, Login, Dashboard e Perfil, bonitas, organizadas, responsivas. Abra o Dashboard agora e clique em "Participar" em qualquer card. Nada acontece. Digite qualquer coisa (ou nada) no formulário de Login e clique em "Entrar". Nada acontece, e nenhum erro aparece se você deixou o campo vazio.
+Se você seguiu a Semana 02, tem hoje três páginas (Login, Dashboard e Perfil) bonitas, organizadas, responsivas. Abra o Dashboard agora e clique em "Participar" em qualquer card. Nada acontece. Digite qualquer coisa (ou nada) no formulário de Login e clique em "Entrar". Nada acontece, e nenhum erro aparece se você deixou o campo vazio.
 
 Isso não é falha do que você construiu, e é exatamente onde a Semana 02 disse que ia parar. HTML e CSS resolvem estrutura e aparência. Nenhum dos dois resolve *comportamento*. É disso que esta semana trata.
 
@@ -16,7 +18,7 @@ Isso não é falha do que você construiu, e é exatamente onde a Semana 02 diss
 <img src="./assets/mock-data-to-render.svg" alt="Array de objetos, com .map(), virando elementos renderizados na tela" width="480">
 </div>
 
-Até a Semana 02, o HTML do Dashboard tinha os cards escritos à mão, um por um, direto no arquivo. A partir desta semana, os cards vão nascer de uma lista de dados, um array, e a tela vai se atualizar sozinha quando essa lista mudar. É a diferença entre uma vitrine fixa e uma vitrine que se reorganiza conforme o estoque muda.
+Até a Semana 02, o HTML do Dashboard tinha os cards escritos à mão, um por um, direto no arquivo. A partir desta semana, os cards vão nascer de uma lista de dados (um array), e a tela vai se atualizar sozinha quando essa lista mudar. É a diferença entre uma vitrine fixa e uma vitrine que se reorganiza conforme o estoque muda.
 
 ## // O que você vai construir até o fim da semana
 
@@ -30,7 +32,7 @@ Até a Semana 02, o HTML do Dashboard tinha os cards escritos à mão, um por um
 Mesmo criando bastante lógica nova, o escopo continua deliberadamente contido:
 
 > **AINDA NÃO NESTA SEMANA**
-> Nenhum backend real, nenhum banco de dados, nenhuma chamada de rede de verdade para um servidor seu. Os dados "de fora" continuam simulados, um array escrito no próprio JavaScript, representando o que um dia virá de uma API. A diferença para a Semana 02 é que agora existe *lógica* processando esses dados, não que exista um servidor novo.
+> Nenhum backend real, nenhum banco de dados, nenhuma chamada de rede de verdade para um servidor seu. Os dados "de fora" continuam simulados: um array escrito no próprio JavaScript, representando o que um dia virá de uma API. A diferença para a Semana 02 é que agora existe *lógica* processando esses dados, não que exista um servidor novo.
 
 ## // Por que JavaScript, e não outra coisa
 
@@ -45,7 +47,7 @@ Voltando ao modelo do Módulo 01 da Semana 02: HTML é estrutura, CSS é apresen
 
 **Se você já tem experiência**, já programou em JavaScript ou outra linguagem antes. Cada módulo tem blocos de aprofundamento, claramente identificados, depois do conteúdo essencial: gerenciamento de estado e um padrão simples de organizar a interface em componentes, sem usar nenhum framework ainda.
 
-Ninguém trabalha em um projeto diferente, todo mundo dá comportamento às mesmas três telas do Buscador de Grupos de Estudo (ou ao seu projeto próprio). A profundidade é que muda.
+Ninguém trabalha em um projeto diferente: todo mundo dá comportamento às mesmas três telas do Buscador de Grupos de Estudo (ou ao seu projeto próprio). A profundidade é que muda.
 
 ## // Mapa da Semana 03
 
@@ -70,6 +72,6 @@ Cada módulo é um arquivo independente, mas foram escritos para serem lidos nes
 
 ---
 
-**Próximo módulo:** `01-como-o-javascript-entra-na-pagina.md`, antes de escrever a primeira linha de lógica, entenda onde e quando ela roda.
+**Próximo módulo:** `01-como-o-javascript-entra-na-pagina.md`: antes de escrever a primeira linha de lógica, entenda onde e quando ela roda.
 
 `Material de Estudo // Coffee & Code`

@@ -1,18 +1,20 @@
 # Módulo 05, Arrays e Métodos Essenciais
 
+Português · [English](../docs-eng/05-arrays-and-essential-methods.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
 
 ## // O problema
 
-O Dashboard não tem "um grupo", tem vários. Guardar cada grupo em uma variável separada (`grupo1`, `grupo2`, `grupo3`...) não escala e não permite percorrer todos de uma vez com o `for...of` que você já conhece do Módulo 03. É exatamente isso que um array resolve.
+O Dashboard não tem "um grupo": tem vários. Guardar cada grupo em uma variável separada (`grupo1`, `grupo2`, `grupo3`...) não escala e não permite percorrer todos de uma vez com o `for...of` que você já conhece do Módulo 03. É exatamente isso que um array resolve.
 
 ## // Array: uma lista ordenada
 
 ```javascript
 const materias = ["Cálculo I", "Estrutura de Dados", "Banco de Dados"];
-console.log(materias[0]); // Cálculo I, o primeiro índice é 0, não 1
+console.log(materias[0]); // Cálculo I (o primeiro índice é 0, não 1)
 console.log(materias.length); // 3
 ```
 
@@ -31,7 +33,7 @@ materias.forEach(function (materia) {
 });
 ```
 
-Parecido com o `for...of` do Módulo 03, mas na forma de método do array, muito comum quando você só precisa *fazer algo* com cada item (como imprimir), sem criar um array novo a partir disso.
+Parecido com o `for...of` do Módulo 03, mas na forma de método do array. É muito comum quando você só precisa *fazer algo* com cada item (como imprimir), sem criar um array novo a partir disso.
 
 ## // `.map()`: transformar cada item em outra coisa
 
@@ -137,7 +139,7 @@ const dobro = participantes.map((numero) => numero * 2);
 
 ## // Aplicando no projeto da semana
 
-1. Estruture os dados do seu Dashboard como um array de objetos (mesmo que ainda não esteja indo para a tela, isso vem no Módulo 12).
+1. Estruture os dados do seu Dashboard como um array de objetos (mesmo que ainda não esteja indo para a tela; isso vem no Módulo 12).
 2. Escreva, usando `.filter()`, a lógica de busca que vai alimentar o campo de busca do Dashboard.
 3. Commit: `git commit -m "Adiciona array de grupos e lógica de filtro"`.
 
@@ -158,6 +160,6 @@ Resposta: `.filter()` primeiro, para manter só os grupos com menos de 10 partic
 
 ---
 
-**Próximo módulo:** `06-objetos-e-desestruturacao.md`, cada item desses arrays é um objeto. Hora de entender essa estrutura a fundo.
+**Próximo módulo:** `06-objetos-e-desestruturacao.md`: cada item desses arrays é um objeto. Hora de entender essa estrutura a fundo.
 
 `Material de Estudo // Coffee & Code`

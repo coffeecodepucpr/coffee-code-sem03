@@ -1,12 +1,14 @@
 # Módulo 07, O DOM: Selecionar e Ler
 
+Português · [English](../docs-eng/07-the-dom-selecting-and-reading.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
 
 ## // O problema
 
-Todo código que você escreveu até agora roda isolado, imprimindo resultado só no console. Para realmente mudar o que uma pessoa vê na tela, o JavaScript precisa primeiro **encontrar** o elemento HTML certo, e é exatamente isso que este módulo resolve.
+Todo código que você escreveu até agora roda isolado, imprimindo resultado só no console. Para realmente mudar o que uma pessoa vê na tela, o JavaScript precisa primeiro **encontrar** o elemento HTML certo. É exatamente isso que este módulo resolve.
 
 ## // O que é o DOM
 
@@ -38,7 +40,7 @@ const campoEmail = document.querySelector("#email");
 | `querySelectorAll(seletor)` | Uma coleção com **todos** os elementos que combinam |
 | `getElementById(id)` | O elemento com aquele `id` específico (sem o `#` na frente, diferente de `querySelector`) |
 
-O seletor passado para `querySelector`/`querySelectorAll` é exatamente a mesma sintaxe CSS que você já usa desde a Semana 02: `.classe`, `#id`, `tag`, `.pai .filho`, tudo funciona igual.
+O seletor passado para `querySelector`/`querySelectorAll` é exatamente a mesma sintaxe CSS que você já usa desde a Semana 02: `.classe`, `#id`, `tag`, `.pai .filho`: tudo funciona igual.
 
 ## // Por que `querySelectorAll` não é um array "de verdade"
 
@@ -117,7 +119,7 @@ if (campo) {
 ## // Pratique sozinho
 
 > **DESAFIO**
-> No Login, selecione os campos de e-mail e senha com `querySelector`. Imprima, no console, uma frase combinando os dois valores (mesmo vazios), usando template literals (Módulo 12 da Semana 02).
+> No Login, selecione os campos de e-mail e senha com `querySelector`. Imprima, no console, uma frase combinando os dois valores (mesmo vazios), usando template literals (como no Módulo 06).
 
 ## // Aplicando no projeto da semana
 
@@ -130,7 +132,7 @@ if (campo) {
 > **ANTES DE SEGUIR, PENSE NISTO**
 > `document.querySelector("#busca").value` devolve `undefined` em vez do texto digitado. O elemento com `id="busca"` existe na página, e o `<script>` já tem `defer`. O que mais você investigaria?
 
-Resposta: se o elemento selecionado realmente é um campo de formulário (`input`, `select`, `textarea`), `.value` só existe de forma útil nesses elementos. Se `#busca` for, por engano, uma `<div>` ou outro elemento sem campo de entrada, `.value` não vai conter o texto esperado. Vale conferir a tag exata do elemento com esse `id` no HTML.
+Resposta: se o elemento selecionado realmente é um campo de formulário (`input`, `select`, `textarea`), porque `.value` só existe de forma útil nesses elementos. Se `#busca` for, por engano, uma `<div>` ou outro elemento sem campo de entrada, `.value` não vai conter o texto esperado. Vale conferir a tag exata do elemento com esse `id` no HTML.
 
 ## // Resumo do módulo
 
@@ -142,6 +144,6 @@ Resposta: se o elemento selecionado realmente é um campo de formulário (`input
 
 ---
 
-**Próximo módulo:** `08-o-dom-criar-e-modificar-elementos.md`, selecionar é só o primeiro passo. Agora, como criar e alterar o que está na tela.
+**Próximo módulo:** `08-o-dom-criar-e-modificar-elementos.md`: selecionar é só o primeiro passo. Agora, como criar e alterar o que está na tela.
 
 `Material de Estudo // Coffee & Code`

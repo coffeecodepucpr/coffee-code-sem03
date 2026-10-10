@@ -1,5 +1,7 @@
 # Módulo 09, Eventos
 
+Português · [English](../docs-eng/09-events.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -11,7 +13,7 @@ Tudo que você escreveu até agora roda **uma vez**, assim que o script carrega 
 ## // O que é um evento
 
 > **EVENTO: EM PALAVRAS SIMPLES**
-> É algo que acontece na página: um clique, uma tecla pressionada, um formulário enviado, que o JavaScript pode "escutar" e reagir a ele.
+> É algo que acontece na página (um clique, uma tecla pressionada, um formulário enviado) que o JavaScript pode "escutar" e reagir a ele.
 
 <div align="center">
 <img src="./assets/event-listener-flow.svg" alt="Fluxo: elemento selecionado, addEventListener escutando, ação da pessoa, função de callback executando" width="560">
@@ -42,7 +44,7 @@ Três partes: o **elemento** que vai escutar (`botao`), o **tipo de evento** (`"
 
 ## // O objeto `event`
 
-A função de callback recebe, automaticamente, um objeto com informações sobre o que aconteceu, por convenção, chamado de `event` ou `e`:
+A função de callback recebe, automaticamente, um objeto com informações sobre o que aconteceu. Por convenção, ele é chamado de `event` ou `e`:
 
 ```javascript
 const form = document.querySelector("#form-login");
@@ -127,7 +129,7 @@ form.addEventListener("submit", function (event) {
 ## // Checkpoint
 
 > **ANTES DE SEGUIR, PENSE NISTO**
-> Um botão "Participar" tem um `addEventListener("click", ...)`, mas nada acontece ao clicar, nem erro no console, nem nenhuma mudança. O que você investigaria, nesta ordem?
+> Um botão "Participar" tem um `addEventListener("click", ...)`, mas nada acontece ao clicar: nem erro no console, nem nenhuma mudança. O que você investigaria, nesta ordem?
 
 Resposta: primeiro, se o `querySelector` realmente encontrou o botão (`console.log(botao)`; se vier `null`, o listener nunca foi de fato adicionado a nada). Segundo, se o seletor usado bate exatamente com o elemento certo, especialmente se existir mais de um botão parecido na página. Terceiro, se o próprio callback tem algum código que realmente produz um efeito observável: um `addEventListener` sem nenhuma linha visível dentro da função "funciona", só não parece fazer nada.
 
@@ -141,6 +143,6 @@ Resposta: primeiro, se o `querySelector` realmente encontrou o botão (`console.
 
 ---
 
-**Próximo módulo:** `10-formularios-e-validacao-em-js.md`, com eventos prontos, hora de aplicar isso diretamente no formulário de Login.
+**Próximo módulo:** `10-formularios-e-validacao-em-js.md`: com eventos prontos, hora de aplicar isso diretamente no formulário de Login.
 
 `Material de Estudo // Coffee & Code`

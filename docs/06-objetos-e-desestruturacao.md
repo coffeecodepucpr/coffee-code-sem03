@@ -1,5 +1,7 @@
 # Módulo 06, Objetos e Desestruturação
 
+Português · [English](../docs-eng/06-objects-and-destructuring.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -18,7 +20,7 @@ const grupo = {
 };
 
 console.log(grupo.materia); // Cálculo I
-console.log(grupo["materia"]); // mesma coisa, forma alternativa
+console.log(grupo["materia"]); // mesma coisa (forma alternativa)
 ```
 
 > **OBJETO: EM PALAVRAS SIMPLES**
@@ -32,7 +34,7 @@ console.log(grupo["materia"]); // mesma coisa, forma alternativa
 | Acesso | Por posição (`array[0]`) | Por nome (`objeto.propriedade`) |
 | Exemplo nesta semana | A lista inteira de grupos | Um grupo específico, com suas informações |
 
-Na prática, os dois quase sempre aparecem juntos: um **array de objetos**, exatamente a estrutura que você já usou no Módulo 05 (`grupos`, onde cada item é um objeto `{ materia, participantes }`).
+Na prática, os dois quase sempre aparecem juntos em um **array de objetos**: exatamente a estrutura que você já usou no Módulo 05 (`grupos`, onde cada item é um objeto `{ materia, participantes }`).
 
 ## // Lendo e alterando propriedades
 
@@ -70,7 +72,7 @@ const grupo = { materia: "Cálculo I", participantes: 5, horario: "terças às 1
 const materia1 = grupo.materia;
 const participantes1 = grupo.participantes;
 
-// com desestruturação, mesmo resultado, uma linha
+// com desestruturação: mesmo resultado, uma linha
 const { materia, participantes } = grupo;
 
 console.log(materia); // Cálculo I
@@ -130,7 +132,7 @@ const grupos = [
 ## // Pratique sozinho
 
 > **DESAFIO**
-> Crie um objeto `usuario` representando o Perfil do projeto (`nome`, `email`, `materias`, este último um array). Escreva uma função `resumoDoUsuario(usuario)` que usa desestruturação no parâmetro e devolve uma frase incluindo o nome e a quantidade de matérias (`usuario.materias.length`).
+> Crie um objeto `usuario` representando o Perfil do projeto (`nome`, `email` e `materias`, este último um array). Escreva uma função `resumoDoUsuario(usuario)` que usa desestruturação no parâmetro e devolve uma frase incluindo o nome e a quantidade de matérias (`usuario.materias.length`).
 
 ## // Aplicando no projeto da semana
 
@@ -155,6 +157,6 @@ Resposta: sim. `g` não é uma cópia do objeto: é uma referência ao mesmo obj
 
 ---
 
-**Próximo módulo:** `07-o-dom-selecionar-e-ler.md`, variáveis, funções, arrays e objetos prontos. Hora de conectar tudo isso à página de verdade.
+**Próximo módulo:** `07-o-dom-selecionar-e-ler.md`: variáveis, funções, arrays e objetos prontos. Hora de conectar tudo isso à página de verdade.
 
 `Material de Estudo // Coffee & Code`

@@ -1,5 +1,7 @@
 # Exemplo executável: Buscador de Grupos de Estudo (Semana 03)
 
+Português · [English](../../docs-eng/example/README.md)
+
 Evolução do exemplo da Semana 02, agora com JavaScript real. As três telas (Login, Dashboard, Perfil) têm comportamento de verdade: sem nenhum backend, sem framework.
 
 ## Isto NÃO é gabarito obrigatório

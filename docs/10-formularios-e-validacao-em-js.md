@@ -1,5 +1,7 @@
 # Módulo 10, Formulários e Validação em JS
 
+Português · [English](../docs-eng/10-forms-and-validation-in-js.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -56,7 +58,7 @@ form.addEventListener("submit", function (event) {
   }
 
   if (valido) {
-    console.log("Formulário válido, aqui entraria o envio de verdade");
+    console.log("Formulário válido: aqui entraria o envio de verdade");
   }
 });
 ```
@@ -135,7 +137,7 @@ if (!email) {
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Sua validação usa `return` dentro do primeiro `if` que falha, em vez de uma variável `valido`. A pessoa deixa e-mail E senha errados, e envia o formulário. O que ela vê?
 
-Resposta: só a mensagem de erro do e-mail. Como o `return` sai da função assim que a primeira condição falha, a checagem da senha nunca chega a rodar, mesmo estando errada também. A pessoa corrige o e-mail, reenvia, e só *aí* descobre que a senha também estava errada, uma experiência frustrante de erros "em cascata". Usar uma variável `valido` (sem `return` antecipado) permite mostrar todos os erros de uma vez.
+Resposta: só a mensagem de erro do e-mail. Como o `return` sai da função assim que a primeira condição falha, a checagem da senha nunca chega a rodar, mesmo estando errada também. A pessoa corrige o e-mail, reenvia, e só *aí* descobre que a senha também estava errada. Uma experiência frustrante de erros "em cascata". Usar uma variável `valido` (sem `return` antecipado) permite mostrar todos os erros de uma vez.
 
 ## // Resumo do módulo
 
@@ -147,6 +149,6 @@ Resposta: só a mensagem de erro do e-mail. Como o `return` sai da função assi
 
 ---
 
-**Próximo módulo:** `11-json-e-dados-mock.md`, antes de renderizar uma lista de verdade, como representar e simular esses dados sem precisar de um backend ainda.
+**Próximo módulo:** `11-json-e-dados-mock.md`: antes de renderizar uma lista de verdade, como representar e simular esses dados sem precisar de um backend ainda.
 
 `Material de Estudo // Coffee & Code`

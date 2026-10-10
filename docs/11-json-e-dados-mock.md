@@ -1,5 +1,7 @@
 # Módulo 11, JSON e Dados Mock
 
+Português · [English](../docs-eng/11-json-and-mock-data.md)
+
 `SEM 03 // Interface Web, Parte 2: Dinâmica`
 
 ---
@@ -11,7 +13,7 @@ Os grupos do Dashboard, até agora, moram direto no `script.js`, como um array e
 ## // O que é JSON
 
 > **JSON: EM PALAVRAS SIMPLES**
-> É um formato de texto para representar dados, parecido com um objeto ou array do JavaScript, mas é *texto puro*, e por isso pode ser enviado por uma rede, salvo em um arquivo, ou trocado entre linguagens de programação diferentes (JSON não é exclusivo de JavaScript, embora o nome venha de lá: *JavaScript Object Notation*).
+> É um formato de texto para representar dados, parecido com um objeto ou array do JavaScript, mas é *texto puro*. Por isso, pode ser enviado por uma rede, salvo em um arquivo, ou trocado entre linguagens de programação diferentes (JSON não é exclusivo de JavaScript, embora o nome venha de lá: *JavaScript Object Notation*).
 
 <div align="center">
 <img src="./assets/json-vs-js-object.svg" alt="Comparação entre um objeto JavaScript e a representação equivalente em JSON" width="540">
@@ -38,7 +40,7 @@ const grupo = {
 |---|---|---|
 | O que é | Uma estrutura de dados, na memória | **Texto**, seguindo um formato específico |
 | Chaves das propriedades | Podem vir sem aspas (`materia:`) | Sempre entre aspas duplas (`"materia":`) |
-| Pode ter funções/métodos dentro? | Sim | Não, JSON só representa dados, nunca comportamento |
+| Pode ter funções/métodos dentro? | Sim | Não: JSON só representa dados, nunca comportamento |
 | Onde aparece | Direto no código JavaScript | Arquivos `.json`, respostas de API, `localStorage` |
 
 ## // Convertendo entre os dois formatos
@@ -81,7 +83,7 @@ Se `renderizarGrupos(lista)` (Módulo 12) só depende de receber um array no for
 
 ## // Adicionando um `id` a cada item
 
-Repare que cada objeto do `gruposMock` acima tem um campo `id`, que os exemplos de módulos anteriores não tinham. Isso importa a partir de agora: quando uma pessoa clicar em "Sair do grupo" (Módulo 14), o código vai precisar saber *qual* item exato do array remover: comparar por `materia` funcionaria até dois grupos terem nomes parecidos. Um `id` único resolve isso de forma confiável.
+Repare que cada objeto do `gruposMock` acima tem um campo `id`, que os exemplos de módulos anteriores não tinham. Isso importa a partir de agora: quando uma pessoa clicar em "Sair do grupo" (Módulo 14), o código vai precisar saber *qual* item exato do array remover. Comparar por `materia` funcionaria até dois grupos terem nomes parecidos. Um `id` único resolve isso de forma confiável.
 
 ## // Bom exemplo × mau exemplo
 
@@ -148,6 +150,6 @@ Resposta: o nome comunica, sem precisar de nenhum comentário adicional, que ess
 
 ---
 
-**Próximo módulo:** `12-renderizando-listas-dinamicamente.md`, dados prontos, estruturados, com `id`. Hora de colocá-los na tela de verdade.
+**Próximo módulo:** `12-renderizando-listas-dinamicamente.md`: dados prontos, estruturados, com `id`. Hora de colocá-los na tela de verdade.
 
 `Material de Estudo // Coffee & Code`
